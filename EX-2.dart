@@ -1,11 +1,13 @@
 class BankAccount {
     // TODO
-    final int accountId;
-    final String owner;
+    final int _accountId;
+    final String _owner;
     double _balance = 0;
 
-    BankAccount(this.accountId, this.owner);
+    BankAccount(this._accountId, this._owner);
 
+    int get accountId => _accountId;
+    String get owner => _owner;
     double get balance => _balance;
 
     void withdraw(double amount){
